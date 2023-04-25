@@ -1,0 +1,31 @@
+body{
+
+    margin:0;
+}
+
+header{
+
+
+
+display:flex;
+flex-direction: row;
+height:10vh;
+width: 100%;
+background-color: black;
+
+
+}
+
+.logo{
+
+    width:10%;
+    height:100%
+}
+
+.logo img
+{
+
+width: 20vh;
+aspect-ratio: 2/1;
+
+}
