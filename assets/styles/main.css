@@ -1,5 +1,4 @@
-.first
-{
+.first {
 
     background-color: white;
     width: 100%;
@@ -10,43 +9,41 @@
     margin-bottom: 50px;
 }
 
-.premier
-{
+.premier {
     margin-top: 2%;
     text-align: center;
-    width:45%
+    width: 45%
 }
-.premier .titre{
 
-    color:black;
+.premier .titre {
+
+    color: black;
     font-size: 2em;
     font-weight: bold;
 }
 
-.premier .sous-titre
-{
+.premier .sous-titre {
     text-align: center;
     font-size: 16px;
     font-weight: 400;
 }
 
-.second
-{
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-width: 80%;
-flex-wrap: wrap;
+.second {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    flex-wrap: wrap;
 
 }
 
 
-.three
-{
+.three {
     text-align: center;
-    width:25%;
+    width: 25%;
 }
-.three .titre{
+
+.three .titre {
     text-align: center;
     font-size: 21px;
     font-weight: 700;
@@ -54,52 +51,122 @@ flex-wrap: wrap;
 
 @media only screen and (max-width:767px) {
 
-    .second{
-        width:100%;
+    .second {
+        width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .three
-{
-    text-align: center;
-    width:100%;
-}
-    
+
+    .three {
+        text-align: center;
+        width: 100%;
+    }
+
 }
 
-.info
-{
+.info {
+
     background-color: #F1F1F2;
-    width:100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
 }
-.info .subinfo
-{
 
-    width:100%;
-    height: 60vh;
+.info .subinfo {
+
+    width: 90%;
+    min-height: 90vh;
+    min-height: 800px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: space-around;
     align-content: space-around;
     justify-content: space-around;
+
 }
-.info p.titre{
+
+.info p.titre {
     font-size: 25px;
     font-weight: 700;
 }
 
-.subinfo article
-{
-    border-radius: 15px;
+.subinfo article {
+    border-radius: 5px;
     padding: 5px;
-    width:25%;
-    min-height: 20%;
+    width: 25%;
+
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.info .subinfo .titre {
+
+    padding: 10px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.info .subinfo .text {
+    padding: 10px;
+    font-size: 16px;
+    padding-top: 0px;
+
+
+}
+
+article {
+    width: 500px;
+    min-height: 200px;
+    position: relative;
+}
+
+article a {
+
+    text-decoration: none;
+}
+
+article .alink {
+
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+section{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width:100%
+}
+
+@media screen and (max-width:990px) {
+
+
+   .info .subinfo
+    {
+
+        flex-direction: column;
+    }
+
+    .subinfo article {
+
+        width:90%;
+        
+    }
+
+    section{
+   
+        flex-direction: column;
+        align-items: center;
+ 
+    }
+
 }
