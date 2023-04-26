@@ -2,8 +2,8 @@
 function show_div()
 {
 
-document.getElementById("interpart").style.display = flex;
-
+document.getElementById("interpart").style.display = "flex";
+document.getElementById("sub_button").style.transform = 'rotate(180deg)';
 
 
 }
@@ -12,5 +12,6 @@ document.getElementById("interpart").style.display = flex;
 function change_cursor()
 {
 
-    document.body.style.cursor = pointer;
+    document.getElementById("sub_button").style.cursor = "pointer";
+
 }

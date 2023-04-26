@@ -21,12 +21,26 @@ footer .first_part {
     align-items: center;
 
 }
+
+.half
+{
+    width:80%;
+}
 #interpart
 {
-    width: 80%;
+    width: 30%;
     height: 20vh;
     display:none;
 
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+
+}
+
+#sub_button{
+
+    transition: transform 0.5s;
 }
 
 footer .first_part .dropdown-content{
