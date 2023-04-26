@@ -1,6 +1,6 @@
 footer {
 
-    height: 65vh;
+    min-height: 65vh;
     width: 100%;
     background-color: black;
     display: flex;
@@ -12,21 +12,44 @@ footer {
 footer .first_part {
 
     width: 80%;
-    height: 30%;
-    background-color: azure;
+    height: 20vh;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color:white;
+    align-items: center;
 
+}
+#interpart
+{
+    width: 80%;
+    height: 20vh;
+    display:none;
+
+}
+
+footer .first_part .dropdown-content{
+
+    width:inherit;
+    height:200px;
+    display:flex;
+}
+
+footer .first_part a 
+{
+    color: white;
+    text-decoration: none;
 }
 
 .first_part .subscribe {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: start;
-    width: 30%;
+    min-width: 30%;
     height: 100%;
-    background-color: aqua;
+
     color: white;
     font-size: 16px;
 }
@@ -35,9 +58,59 @@ footer .first_part {
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     height: 100%;
-    width: 20%;
-    background-color: aqua;
+    min-width: 20%;
+
     color: white
+}
+
+footer .second_part{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    width:80%;
+    height:30vh;
+
+    
+}
+
+.second_part .article{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.second_part p.titre
+{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 700;
+    color:white;
+
+}
+
+.second_part a{
+
+    color: gray;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media screen and (max-width:800px){
+
+footer .first_part{
+
+    flex-direction: column;
+}
+
+footer .second_part {
+
+    flex-direction: column;
+}
+
 }

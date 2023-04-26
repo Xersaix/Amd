@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
     <link rel="stylesheet" href="assets/styles/hero.css">
     <link rel="stylesheet" href="assets/styles/main.css">
@@ -164,8 +164,12 @@
         <div class="first_part">
 
             <div class="subscribe">
+
                 <a href="">Abonnez-vous pour recevoir les dernières actualités d'AMD
-                </a>
+                </a><span class="material-symbols-outlined" onclick="show_div()" onmouseenter="change_cursor()" id="sub_button">
+                    expand_more
+                </span>
+
             </div>
 
 
@@ -181,8 +185,70 @@
             </div>
         </div>
 
+        <div id="interpart">
+
+            <form action="/action_page.php">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <input type="submit" value="Submit">
+              </form> 
+        </div>
+        <div class="second_part">
+            <div class="article">
+                <p class="titre">Societé</p>
+                <a href="">À propos d'AMD</a>
+                <a href="">Équipe de direction</a>
+                <a href="">Responsabilité d'entreprise</a>
+                <a href="">Carrières</a>
+                <a href="">Nous contacter</a>
+
+            </div>
+            <div class="article">
+                <p class="titre">Nouveautés et évènements</p>
+                <a href="">Salle de presse</a>
+                <a href="">Évènements</a>
+                <a href="">Médiathèque</a>
+
+
+            </div>
+            <div class="article">
+                <p class="titre">Communauté</p>
+                <a href="">Forums d'assistance</a>
+                <a href="">Développeurs</a>
+                <a href="">Red Team</a>
+
+
+            </div>
+            <div class="article">
+                <p class="titre">Partenaires</p>
+                <a href="">Hub partenaires AMD</a>
+                <a href="">Bibliothèque de ressources partenaires</a>
+                <a href="">Distributeurs agréés</a>
+
+
+            </div>
+            <div class="article">
+                <p class="titre">Investisseurs</p>
+                <a href="">Relations avec les investisseurs</a>
+                <a href="">Informations financières</a>
+                <a href="">Conseil d'administration</a>
+                <a href="">Documents de gouvernance</a>
+                <a href="">Dépôts auprès de la SEC</a>
+
+            </div>
+
+
+
+
+
+        </div>
+
 
     </footer>
 </body>
 
 </html>
+
+<script src="assets/js/myscript.js"></script>
